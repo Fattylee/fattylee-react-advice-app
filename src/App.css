@@ -1,0 +1,38 @@
+body {
+background: gray;
+}
+
+.error {
+font-size: 10px;
+color: red
+}
+
+pre {
+color: crimson;
+padding: 2em;
+background-color: gainsboro;
+border-left: 10px black solid;
+}
+
+.fetch {
+padding:20px;
+border-radius: 10px;
+background: goldenrod;
+}
+.title {
+font-size:120%;
+color: greenyellow;
+/* color: red; */
+font-style:italic;
+}
+
+.block {
+display: block;
+height: 200px;
+background: crimson;
+padding: 1rem;
+}
+
+.my_list{
+list-style: disc;
+}
