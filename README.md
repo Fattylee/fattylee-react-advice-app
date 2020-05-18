@@ -1,5 +1,7 @@
-# Beginner React Hook Tutorial
+# A slow pace into React Hooks
 
-Code for YouTube series: https://www.youtube.com/playlist?list=PLN3n1USn4xlmyw3ebYuZmGp60mcENitdM
+## Get all the awesome advice from this app
 
-code fork while learning react hooks from Ben Award
+Live Demo -- Coming soon...
+
+Built with a create-react-appp boiler-plate
