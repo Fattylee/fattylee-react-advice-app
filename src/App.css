@@ -1,7 +1,14 @@
-body {
-background: gray;
+:root,html,body {
+background: papayawhip url(./assets/bg.png) center;
+background-size: cover;
+background-repeat: no-repeat;
+padding: 0;
+margin: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-
 .error {
 font-size: 10px;
 color: red
@@ -35,4 +42,37 @@ padding: 1rem;
 
 .my_list{
 list-style: disc;
+}
+
+.card {
+background: pink;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+/* height: 100%; */
+padding: 10px;
+box-shadow: -10px 10px  rgba(100,0,34,0.4);
+border-radius: 10px;
+width: 80%;
+margin: 0 auto;
+}
+
+.card h1{
+font-size: calc(8vw);
+}
+.card button{
+padding: 10px 15px;
+border:none;
+outline: none;
+border-radius: 3px;
+color: gold;
+background: black;
+text-transform: uppercase;
+border: 1px solid black;
+}
+.card button:hover{
+color: black;
+background: transparent;
 }
