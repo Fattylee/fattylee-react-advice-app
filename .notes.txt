@@ -1,0 +1,9 @@
+gcb -d gh-pages
+
+mv dist/ .dist/
+
+rm -r *
+
+mv .dist/* ./
+
+rm -r .dist/
