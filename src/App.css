@@ -11,42 +11,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-.error {
-  font-size: 10px;
-  color: red;
-}
-
-pre {
-  color: crimson;
-  padding: 2em;
-  background-color: gainsboro;
-  border-left: 10px black solid;
-}
-
-.fetch {
-  padding: 20px;
-  border-radius: 10px;
-  background: goldenrod;
-}
-.title {
-  font-size: 120%;
-  color: greenyellow;
-  /* color: red; */
-  font-style: italic;
-}
-
-.block {
-  display: block;
-  height: 200px;
-  background: crimson;
-  padding: 1rem;
-}
-
-.my_list {
-  list-style: disc;
-}
 
 .card {
+  --bg-secondary: rgba(9, 37, 84, 1);
   background: pink;
   color: white;
   display: flex;
@@ -55,7 +22,7 @@ pre {
   flex-direction: column;
   /* height: 100%; */
   padding: 10px;
-  box-shadow: -05px 5px rgba(203, 45, 178, 0.4);
+  box-shadow: -05px 5px var(--bg-secondary);
   width: 100%;
   min-width: 250px;
   margin: 0 auto;
@@ -75,6 +42,7 @@ pre {
   border: 1px solid black;
   cursor: pointer;
   position: relative;
+  width: 200px;
 
   padding-right: 30px;
   transition: 0.3s;
@@ -86,7 +54,7 @@ pre {
 }
 .card button:hover::after {
   opacity: 1;
-  right: 10px;
+  right: 35px;
 }
 .card button::after {
   content: "!!";
@@ -98,4 +66,69 @@ pre {
 
 .card button:active {
   border-color: white;
+}
+
+.card span {
+  --diameter: 10px;
+  display: inline-block;
+  width: var(--diameter);
+  height: var(--diameter);
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px white solid;
+  border-top-color: var(--bg-secondary);
+  border-bottom-color: var(--bg-secondary);
+  animation: rotate 2s infinite;
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card span.loading {
+  opacity: 1;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.modal {
+  background: white;
+  padding: 20px 30px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  max-width: 300px;
+  /* width: 300px; */
+  color: rgba(221, 113, 113, 1);
+  position: fixed;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  transition: top 0.5s;
+}
+.modal.slide {
+  top: 50%;
+}
+
+.modal-bg {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+.modal-bg.slide {
+  visibility: visible;
 }
