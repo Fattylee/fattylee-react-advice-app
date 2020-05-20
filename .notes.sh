@@ -1,11 +1,15 @@
-yarn start &&
+yarn build &&
 
-git checkout -b gh-pages
+git checkout -B gh-pages &&
 
-mv build/ .build/
+mv build/ .build/ &&
 
-rm -r *
+rm -r * &&
 
-mv .build/* ./
+mv .build/* ./ &&
 
-rm -rf .build/
+rm -rf .build/ &&
+
+git add . &&
+
+git commit -m "$1"
