@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.fbe3c913.chunk.css",
-    "main.js": "/static/js/main.f7cfff8a.chunk.js",
-    "main.js.map": "/static/js/main.f7cfff8a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d7510bc7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d7510bc7.js.map",
-    "static/js/2.0b460bc5.chunk.js": "/static/js/2.0b460bc5.chunk.js",
-    "static/js/2.0b460bc5.chunk.js.map": "/static/js/2.0b460bc5.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.38fa94a9036fb1cd1fca4eb721e094fd.js": "/precache-manifest.38fa94a9036fb1cd1fca4eb721e094fd.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.fbe3c913.chunk.css.map": "/static/css/main.fbe3c913.chunk.css.map",
-    "static/js/2.0b460bc5.chunk.js.LICENSE.txt": "/static/js/2.0b460bc5.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/architecture-bg.5ac23d48.jpg"
+    "main.css": "/fattylee-react-advice-app/static/css/main.7d5a74bf.chunk.css",
+    "main.js": "/fattylee-react-advice-app/static/js/main.c46cfd6f.chunk.js",
+    "main.js.map": "/fattylee-react-advice-app/static/js/main.c46cfd6f.chunk.js.map",
+    "runtime-main.js": "/fattylee-react-advice-app/static/js/runtime-main.284efe6b.js",
+    "runtime-main.js.map": "/fattylee-react-advice-app/static/js/runtime-main.284efe6b.js.map",
+    "static/js/2.0b460bc5.chunk.js": "/fattylee-react-advice-app/static/js/2.0b460bc5.chunk.js",
+    "static/js/2.0b460bc5.chunk.js.map": "/fattylee-react-advice-app/static/js/2.0b460bc5.chunk.js.map",
+    "index.html": "/fattylee-react-advice-app/index.html",
+    "precache-manifest.07dee7f89a417de0970e7924d647513d.js": "/fattylee-react-advice-app/precache-manifest.07dee7f89a417de0970e7924d647513d.js",
+    "service-worker.js": "/fattylee-react-advice-app/service-worker.js",
+    "static/css/main.7d5a74bf.chunk.css.map": "/fattylee-react-advice-app/static/css/main.7d5a74bf.chunk.css.map",
+    "static/js/2.0b460bc5.chunk.js.LICENSE.txt": "/fattylee-react-advice-app/static/js/2.0b460bc5.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/fattylee-react-advice-app/static/media/architecture-bg.5ac23d48.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d7510bc7.js",
+    "static/js/runtime-main.284efe6b.js",
     "static/js/2.0b460bc5.chunk.js",
-    "static/css/main.fbe3c913.chunk.css",
-    "static/js/main.f7cfff8a.chunk.js"
+    "static/css/main.7d5a74bf.chunk.css",
+    "static/js/main.c46cfd6f.chunk.js"
   ]
 }
