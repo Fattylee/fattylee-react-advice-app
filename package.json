@@ -1,5 +1,5 @@
 {
- "http://fattylee.github.io/fattylee-react-advice-app",
+  "homepage": "http://fattylee.github.io/fattylee-react-advice-app",
   "name": "advice-app",
   "version": "0.1.0",
   "private": true,

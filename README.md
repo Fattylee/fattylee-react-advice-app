@@ -8,6 +8,6 @@
 
 - [Advice-App - netlify](https://fattylee-react-advice-app.netlify.app/)
 
-- [Advice-App - gh-pages](https://fattylee.github.io/fattylee-form-validation/)
+- [Advice-App - gh-pages](https://fattylee.github.io/fattylee-react-advice-app/)
 
 Built with a create-react-appp boiler-plate
