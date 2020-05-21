@@ -1,7 +1,7 @@
 :root,
 html,
 body {
-  background: papayawhip url(./assets/bg.png) center;
+  background: rgba(0, 0, 0, 0.9) url(./assets/architecture-bg.jpg) center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0;
@@ -14,7 +14,7 @@ body {
 
 .card {
   --bg-secondary: rgba(9, 37, 84, 1);
-  background: pink;
+  background: rgba(234, 146, 90, 1);
   color: white;
   display: flex;
   justify-content: center;
@@ -49,7 +49,7 @@ body {
   transition: 0.3s;
 }
 .card button:hover {
-  color: black;
+  color: white;
   background: transparent;
   padding-right: 20px;
 }

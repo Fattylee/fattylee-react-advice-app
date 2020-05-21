@@ -15,7 +15,6 @@ const App = () => {
   });
 
   useEffect(() => {
-    document.querySelector("title").innerHTML = "Advice App";
     fetchAdvice(adviceUrl).then((advice) =>
       setAdviceState((state) => ({ ...state, advice }))
     );
