@@ -1,1 +1,0 @@
-yarn build && git branch -d gh-pages && git checkout -b gh-pages && mv dist/ .dist/  && rm -r * && mv .dist/* ./ && rm -r .dist/
