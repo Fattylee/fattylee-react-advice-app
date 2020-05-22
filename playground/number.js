@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const number = 1346524478;
 let num = number.toLocaleString(
   ("en-US", { style: "currency", currency: "usd" })
