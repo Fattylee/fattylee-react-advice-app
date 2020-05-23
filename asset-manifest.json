@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/fattylee-react-advice-app/static/css/main.7d5a74bf.chunk.css",
-    "main.js": "/fattylee-react-advice-app/static/js/main.c46cfd6f.chunk.js",
-    "main.js.map": "/fattylee-react-advice-app/static/js/main.c46cfd6f.chunk.js.map",
-    "runtime-main.js": "/fattylee-react-advice-app/static/js/runtime-main.284efe6b.js",
-    "runtime-main.js.map": "/fattylee-react-advice-app/static/js/runtime-main.284efe6b.js.map",
-    "static/js/2.0b460bc5.chunk.js": "/fattylee-react-advice-app/static/js/2.0b460bc5.chunk.js",
-    "static/js/2.0b460bc5.chunk.js.map": "/fattylee-react-advice-app/static/js/2.0b460bc5.chunk.js.map",
+    "main.css": "/fattylee-react-advice-app/static/css/main.6cf0f722.chunk.css",
+    "main.js": "/fattylee-react-advice-app/static/js/main.018d7f0b.chunk.js",
+    "main.js.map": "/fattylee-react-advice-app/static/js/main.018d7f0b.chunk.js.map",
+    "runtime-main.js": "/fattylee-react-advice-app/static/js/runtime-main.61c54046.js",
+    "runtime-main.js.map": "/fattylee-react-advice-app/static/js/runtime-main.61c54046.js.map",
+    "static/js/2.0f8ddb01.chunk.js": "/fattylee-react-advice-app/static/js/2.0f8ddb01.chunk.js",
+    "static/js/2.0f8ddb01.chunk.js.map": "/fattylee-react-advice-app/static/js/2.0f8ddb01.chunk.js.map",
     "index.html": "/fattylee-react-advice-app/index.html",
-    "precache-manifest.07dee7f89a417de0970e7924d647513d.js": "/fattylee-react-advice-app/precache-manifest.07dee7f89a417de0970e7924d647513d.js",
+    "precache-manifest.317cfb270628e4ecdce2c7ad1f75412f.js": "/fattylee-react-advice-app/precache-manifest.317cfb270628e4ecdce2c7ad1f75412f.js",
     "service-worker.js": "/fattylee-react-advice-app/service-worker.js",
-    "static/css/main.7d5a74bf.chunk.css.map": "/fattylee-react-advice-app/static/css/main.7d5a74bf.chunk.css.map",
-    "static/js/2.0b460bc5.chunk.js.LICENSE.txt": "/fattylee-react-advice-app/static/js/2.0b460bc5.chunk.js.LICENSE.txt",
+    "static/css/main.6cf0f722.chunk.css.map": "/fattylee-react-advice-app/static/css/main.6cf0f722.chunk.css.map",
+    "static/js/2.0f8ddb01.chunk.js.LICENSE.txt": "/fattylee-react-advice-app/static/js/2.0f8ddb01.chunk.js.LICENSE.txt",
     "static/media/App.css": "/fattylee-react-advice-app/static/media/architecture-bg.5ac23d48.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.284efe6b.js",
-    "static/js/2.0b460bc5.chunk.js",
-    "static/css/main.7d5a74bf.chunk.css",
-    "static/js/main.c46cfd6f.chunk.js"
+    "static/js/runtime-main.61c54046.js",
+    "static/js/2.0f8ddb01.chunk.js",
+    "static/css/main.6cf0f722.chunk.css",
+    "static/js/main.018d7f0b.chunk.js"
   ]
 }

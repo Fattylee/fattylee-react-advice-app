@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fattylee-react-advice-app/precache-manifest.07dee7f89a417de0970e7924d647513d.js"
+  "/fattylee-react-advice-app/precache-manifest.317cfb270628e4ecdce2c7ad1f75412f.js"
 );
 
 self.addEventListener('message', (event) => {
