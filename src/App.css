@@ -12,6 +12,13 @@ body {
   align-items: center;
 }
 
+h1.list {
+  color: white;
+  background: black;
+  padding: 10px;
+  border-radius: 4px;
+}
+
 .card {
   --bg-secondary: rgba(9, 37, 84, 1);
   background: rgba(234, 146, 90, 1);
@@ -32,6 +39,7 @@ body {
 .card h1 {
   font-size: 1.5rem;
 }
+
 .card button {
   padding: 10px 15px;
   border: none;
