@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import uniqueID from "./helpers/uuid";
 
 const List = () => {
@@ -6,6 +6,7 @@ const List = () => {
   const [val, setVal] = useState("");
   const [isEdit, setEdit] = useState(false);
   const [editId, setEditId] = useState("");
+  const inputRef = useRef(null);
 
   const deleteSurah = (e) => {
     const id = e.target.getAttribute("data-id");
@@ -37,6 +38,7 @@ const List = () => {
     setEdit(true);
     setEditId(id);
     setVal(surah);
+    inputRef.current.focus();
   };
 
   const itemsList = surahs.map(({ id, surah }) => (
@@ -50,11 +52,25 @@ const List = () => {
     setVal(() => inputVal);
   };
 
+  const handleOnblur = (e) => {
+    if (isEdit) {
+      e.target.value = "xxx";
+      setVal("");
+      setEdit(false);
+    }
+  };
+
   return (
     <>
       <h1 className="list">My List of Favourites Surah</h1>
       <form onSubmit={addSurah}>
-        <input type="text" value={val} onChange={handleChange} />
+        <input
+          ref={inputRef}
+          type="text"
+          value={val}
+          onChange={handleChange}
+          onBlur={handleOnblur}
+        />
         <button>{!isEdit ? "Add Surah" : "Edit Surah"}</button>
       </form>
       <ul id="list-of-surahs">{itemsList}</ul>
