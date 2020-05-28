@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import uniqueID from "./helpers/uuid";
 
 const List = () => {
@@ -7,6 +7,17 @@ const List = () => {
   const [isEdit, setEdit] = useState(false);
   const [editId, setEditId] = useState("");
   const inputRef = useRef(null);
+
+  useEffect(() => {
+    const myLIst = JSON.parse(localStorage.getItem(`List`));
+    if (myLIst) {
+      setSurahs(myLIst);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("List", JSON.stringify(surahs));
+  }, [surahs, isEdit]);
 
   const deleteSurah = (e) => {
     const id = e.target.getAttribute("data-id");
@@ -42,7 +53,7 @@ const List = () => {
   };
 
   const itemsList = surahs.map(({ id, surah }) => (
-    <li data-id={id} onClick={deleteSurah} key={id}>
+    <li data-id={id} onDoubleClick={deleteSurah} key={id}>
       {surah} <span onClick={editSurah}>edit</span>
     </li>
   ));

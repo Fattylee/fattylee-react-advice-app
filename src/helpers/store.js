@@ -10,35 +10,13 @@ const useStore = () => {
       if (counterDB) {
         return counterDB;
       }
-      console.log(counterDB);
       return { ...stateVal, counter: 3 };
     }
   );
 
   useEffect(() => {
-    return () => {
-      console.log("unmounting", state);
-    };
-  }, []);
-
-  /*   useEffect(() => { */
-  // const initialCounterState = JSON.parse(localStorage.getItem("counter"));
-
-  // if (!initialCounterState) {
-  // localStorage.setItem("counter", JSON.stringify(state));
-  // } else {
-  // dispatch({ type: "set_counter", payload: { counter: -5 } });
-  // }
-
-  // console.log("mounted....");
-
-  // return () => {
-  // console.log("unmounting....");
-
-  // // console.log(initialCounterState);
-  // console.log(state);
-  // };
-  /* }, []) */
+    localStorage.setItem("counter", JSON.stringify(state));
+  }, [state.counter]);
 
   return [state, dispatch];
 };
