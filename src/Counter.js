@@ -1,29 +1,45 @@
-import React, { Fragment, useReducer } from "react";
-import reducer from "./helpers/store";
+import React, { useEffect, useRef } from "react";
+import useStore from "./helpers/store";
 
-const handleCounterClick = (e, type, dispatch) => {
+const handleCounterClick = (type, dispatch, {refState,state}) => {
   if (type === "increase") {
     dispatch({ type });
   } else if (type === "decrease") {
     dispatch({ type });
   }
+
+  refState.current=state;
+  console.log(refState.current);
+  console.log(state);
 };
 
-const Count = () => {
-  const [state, dispatch] = useReducer(reducer, { counter: 5 });
+const Counter = () => {
+  const [state, dispatch] = useStore();
 
-  console.log(state);
+  const refState = useRef(state);
+
+  useEffect(() => {
+
+    return () => {
+      // this value is the stale value not the current state value
+      // console.log("unmounting...2", state.counter);
+      refState.current.counter++;
+      console.log("refState", refState.current);
+      localStorage.setItem('counter', JSON.stringify(refState.current))
+    };
+  }, []);
+
   return (
-    <Fragment>
+    <div className="counter">
       <h2>Count is {state.counter}</h2>
-      <button onClick={(e) => handleCounterClick(e, "increase", dispatch)}>
+      <button onClick={() => handleCounterClick("increase", dispatch,{refState,state})}>
         +
       </button>
-      <button onClick={(e) => handleCounterClick(e, "decrease", dispatch)}>
+      <button onClick={() => handleCounterClick("decrease", dispatch,{refState,state})}>
         -
       </button>
-    </Fragment>
+    </div>
   );
 };
 
-export default Count;
+export default Counter;

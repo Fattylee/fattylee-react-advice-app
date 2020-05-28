@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import List from "./List";
 import Count from "./Counter";
+// import useStore from "./helpers/store";
 
 import "./App.css";
 
@@ -14,7 +15,10 @@ const App = () => {
   const [adviceState, setAdviceState] = useState({
     advice: "Default advice here",
     isLoading: false,
+    toggleCounter: true,
   });
+
+  // console.log(useStore());
 
   useEffect(() => {
     fetchAdvice(adviceUrl).then((advice) =>
@@ -22,11 +26,21 @@ const App = () => {
     );
   }, [adviceUrl]);
 
-  console.log(adviceState);
+  // console.log(adviceState);
 
   return (
     <Fragment>
-      <Count />
+      {adviceState.toggleCounter && <Count />}
+      <button
+        onClick={() =>
+          setAdviceState((prevState) => ({
+            ...prevState,
+            toggleCounter: !prevState.toggleCounter,
+          }))
+        }
+      >
+        toggleCounter
+      </button>
       <List />
       <div className={adviceState.error ? "modal-bg slide" : "modal-bg"}>
         <div className={adviceState.error ? "modal slide" : "modal"}>
@@ -35,6 +49,7 @@ const App = () => {
             onClick={() => {
               setAdviceState((state) => ({
                 ...state,
+
                 error: false,
               }));
             }}
@@ -51,7 +66,7 @@ const App = () => {
               // trigger isLoading
               setAdviceState((state) => ({ ...state, isLoading: true }));
               clearTimeout(adviceState.errorId);
-              console.log("I got clicked!");
+              // console.log("I got clicked!");
               fetchAdvice(adviceUrl)
                 .then((advice) =>
                   setAdviceState((state) => ({
@@ -79,7 +94,7 @@ const App = () => {
                     errorMessage: err.message,
                     errorId,
                   }));
-                  console.log("no network, try again", err.message);
+                  // console.log("no network, try again", err.message);
                 });
             }}
           >
