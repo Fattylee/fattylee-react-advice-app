@@ -1,4 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react";
+import List from "./List";
+import Count from "./Counter";
 
 import "./App.css";
 
@@ -24,6 +26,8 @@ const App = () => {
 
   return (
     <Fragment>
+      <Count />
+      <List />
       <div className={adviceState.error ? "modal-bg slide" : "modal-bg"}>
         <div className={adviceState.error ? "modal slide" : "modal"}>
           <p>{adviceState.errorMessage}</p>
