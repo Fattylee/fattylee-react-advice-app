@@ -45,6 +45,17 @@ const List = () => {
   const editSurah = (e) => {
     const id = e.target.parentElement.getAttribute("data-id");
     const index = surahs.findIndex(({ id: itemID }) => itemID === id);
+
+    const lis = document.querySelectorAll("#list-of-surahs li");
+
+    lis.forEach((li) => {
+      li.className = "";
+      if (li === e.target.parentElement) {
+        console.log(li);
+        e.target.parentElement.className = "flash";
+      }
+    });
+
     const { surah } = surahs[index];
     setEdit(true);
     setEditId(id);

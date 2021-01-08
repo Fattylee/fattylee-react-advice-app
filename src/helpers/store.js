@@ -16,7 +16,7 @@ const useStore = () => {
 
   useEffect(() => {
     localStorage.setItem("counter", JSON.stringify(state));
-  }, [state.counter]);
+  }, [state]);
 
   return [state, dispatch];
 };

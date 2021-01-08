@@ -1,6 +1,8 @@
 import React, { Fragment, useState, useEffect } from "react";
 import List from "./List";
 import Count from "./Counter";
+import DropDown from "./DropDown";
+import FetchUsers from "./components/Apollo";
 // import useStore from "./helpers/store";
 
 import "./App.css";
@@ -28,8 +30,12 @@ const App = () => {
 
   // console.log(adviceState);
 
+  // <ApolloProvider client={client}>
+  // </ApolloProvider>;
   return (
     <Fragment>
+      <FetchUsers />
+      <DropDown />
       {adviceState.toggleCounter && <Count />}
       <button
         onClick={() =>

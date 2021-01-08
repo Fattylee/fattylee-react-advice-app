@@ -12,6 +12,10 @@ body {
   align-items: center;
 }
 
+button {
+  cursor: pointer;
+}
+
 h1.list {
   color: white;
   background: black;
@@ -149,4 +153,25 @@ h1.list {
   .card h1 {
     font-size: 2rem;
   }
+}
+
+#dropdown {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(235, 227, 166, 0.3);
+  width: 200px;
+  border-radius: 5px;
+}
+
+#list-of-surahs {
+  background: hsla(308, 86%, 28%, 70%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+#list-of-surahs .flash {
+  background: hsl(74, 82%, 30%);
+  padding: 3px;
 }
